@@ -7,6 +7,7 @@ RUN yum -y install php-fpm php-gd php-mbstring php-mysql php-pecl-apc \
 RUN mkdir -p /var/www/html
 RUN service httpd start
 RUN service httpd restart
+
 EXPOSE 80
 
 ENTRYPOINT ["/usr/sbin/httpd", "-DFOREGROUND"]
