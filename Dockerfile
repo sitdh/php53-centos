@@ -17,7 +17,4 @@ RUN chmod a+x /usr/local/bin/service-startup
 
 EXPOSE 80
 
-RUN service httpd24-httpd start
-RUN service php-fpm start
-
 ENTRYPOINT ["service-startup"]
