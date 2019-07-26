@@ -4,7 +4,7 @@ RUN yum -y update && yum clean all
 RUN yum install centos-release-scl -y
 RUN yum install httpd24 -y && yum clean all
 RUN yum -y install php5 php-fpm php-gd php-mbstring php-mysql \
-  php-pecl-apc php-process php-xml php-common php-pecl-memcache php-pecl-xdebug.x86_64 && \
+  php-pecl-apc php-process php-xml php-common php-pecl-memcache && \
   yum clean all
 
 RUN scl enable httpd24 bash
